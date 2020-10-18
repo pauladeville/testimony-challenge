@@ -3,6 +3,15 @@
 
 @media screen and (min-width: map-get($breakpoints, sm)) {
 
+    .hidden {
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+    }
+    .show {
+        opacity: 1;
+        transition: opacity 300ms ease-in-out;
+    }
+    
     body {
     color: $dark-text-color;
     font-family: 'Inter', sans-serif;

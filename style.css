@@ -1,8 +1,16 @@
 @media screen and (max-width: 900px) {
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
   body {
     color: #202046;
     font-family: "Inter", sans-serif;
-    background-image: url(../images/pattern-curve.svg);
+    background-image: url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0% 100%;
@@ -81,6 +89,16 @@
   }
 }
 @media screen and (min-width: 900px) {
+  .hidden {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+
+  .show {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+  }
+
   body {
     color: #202046;
     font-family: "Inter", sans-serif;
