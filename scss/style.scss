@@ -50,6 +50,9 @@
             span {
                 color: $dark-text-color;
                 font-weight: 700;
+                @include mQ(map-get($breakpoints, sm), map-get($breakpoints, md)) {
+                    display: block;
+                }
             }
         }
     }
