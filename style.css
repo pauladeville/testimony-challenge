@@ -185,8 +185,8 @@
 @media screen and (min-width: 900px) {
   #pattern-bg {
     position: absolute;
-    right: 140px;
-    bottom: 100px;
+    right: -90px;
+    bottom: -595px;
   }
 }
 @media screen and (min-width: 900px) {
