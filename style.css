@@ -102,10 +102,10 @@
   body {
     color: #202046;
     font-family: "Inter", sans-serif;
-    background-image: url(../images/pattern-curve.svg);
+    background-image: url(../images/pattern-curve.svg), url(../images/pattern-bg.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0% 100%;
+    background-position: 0% 100%, 85% 12%;
   }
 
   .testimony {
@@ -184,9 +184,7 @@
 }
 @media screen and (min-width: 900px) {
   #pattern-bg {
-    position: absolute;
-    right: -90px;
-    bottom: -595px;
+    display: none;
   }
 }
 @media screen and (min-width: 900px) {
