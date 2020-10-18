@@ -1,0 +1,81 @@
+@import "_variables.scss";
+@import "_style-mobile.scss";
+
+@media screen and (min-width: map-get($breakpoints, sm)) {
+
+    body {
+    color: $dark-text-color;
+    font-family: 'Inter', sans-serif;
+    background-image: url(../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 100%;
+}
+
+.testimony {
+    width: 70%;
+    margin: 100px auto;
+    position: relative;
+    @include mQ(map-get($breakpoints, sm), map-get($breakpoints, lg)) {
+        width: 85%;
+    }
+    &_text {
+        font-weight: 300;
+        width: 55%;
+        position: absolute;
+        top: 160px;
+        z-index: 2;
+        @include mQ(map-get($breakpoints, sm), map-get($breakpoints, lg)) {
+            width: 45%;
+        }
+        &--main {
+            font-size: 1.7rem;
+            @include mQ(map-get($breakpoints, sm), map-get($breakpoints, lg)) {
+                font-size: 1.5rem;
+            }
+        }
+        &--source {
+            font-size: 1rem;
+            color: $light-text-color;
+            font-weight: 500;
+            span {
+                color: $dark-text-color;
+                font-weight: 700;
+            }
+        }
+    }
+    &_img {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        box-shadow: 0 20px 20px -10px $shadow-color;
+    }
+    .sliderbar {
+        background-color: white;
+        display: inline-block;
+        position: absolute;
+        right: 400px;
+        bottom: -560px;
+        z-index: 3;
+        border-radius: 20px;
+        box-shadow: 0 20px 20px -10px $shadow-color;
+        &_arrow {
+            margin: 10px 15px 8px 15px;
+    
+        }
+    }   
+}
+
+#pattern-bg {
+    position: absolute;
+    right: 140px;
+    bottom: 100px;
+}
+
+#pattern-quote {
+    position: absolute;
+    top: 112px;
+    left: 78px;
+}
+
+}

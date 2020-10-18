@@ -1,0 +1,87 @@
+@import "_variables.scss";
+
+@media screen and (max-width: map-get($breakpoints, sm)) {
+
+body {
+    color: $dark-text-color;
+    font-family: 'Inter', sans-serif;
+    background-image: url(../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 100%;
+    background-size: 80%;
+}
+
+.testimony {
+    width: 305px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &_text {
+        margin-top: 80px;
+        font-weight: 300;
+        width: 100%;
+        z-index: 2;
+        &--main {
+            font-size: 1.1rem;
+            z-index: 2;
+
+        }
+        &--source {
+            font-size: 0.9rem;
+            color: $light-text-color;
+            font-weight: 500;
+            margin-top: 25px;
+            span {
+                color: $dark-text-color;
+                font-weight: 700;
+                display: block;
+            }
+        }
+    }
+    &_img {
+        z-index: 2;
+        box-shadow: 0 20px 20px -10px $shadow-color;
+        width: 80%;
+        margin: auto;
+    }
+    .sliderbar {
+        background-color: white;
+        display: inline-block;
+        z-index: 3;
+        border-radius: 20px;
+        box-shadow: 0 20px 20px -10px $shadow-color;
+        position: absolute;
+        top: 277px;
+        &_arrow {
+            margin: 10px 15px 8px 15px;
+        }
+    }   
+}
+
+#pattern-bg {
+    position: absolute;
+    right: -5px;
+    top: 22px;
+    width: 315px;
+    z-index: -1;
+}
+
+#pattern-quote {
+    position: absolute;
+    top: 350px;
+    left: 120px;
+    z-index: -1;
+    width: 56px;
+}
+
+.testimony_container{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+}

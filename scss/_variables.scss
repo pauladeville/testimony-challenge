@@ -1,0 +1,12 @@
+//COULEURS
+$dark-text-color: hsl(240, 38%, 20%);
+$light-text-color: hsl(240, 18%, 77%);
+$shadow-color: rgba(58, 48, 136, 0.4);
+
+$breakpoints: (lg:1300px, md:1100px, sm:900px, xs:500px);
+
+@mixin mQ($min-size, $max-size) {
+    @media screen and (min-width: $min-size) and (max-width: $max-size) {
+            @content;
+    }
+};
