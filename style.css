@@ -10,7 +10,7 @@
   body {
     color: #202046;
     font-family: "Inter", sans-serif;
-    background-image: url("../images/pattern-curve.svg");
+    background-image: url("images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0% 100%;
@@ -102,7 +102,7 @@
   body {
     color: #202046;
     font-family: "Inter", sans-serif;
-    background-image: url(../images/pattern-curve.svg), url(../images/pattern-bg.svg);
+    background-image: url("images/pattern-curve.svg"), url("images/pattern-bg.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0% 100%, 85% 12%;

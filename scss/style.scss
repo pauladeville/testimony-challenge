@@ -15,7 +15,7 @@
     body {
     color: $dark-text-color;
     font-family: 'Inter', sans-serif;
-    background-image: url(../images/pattern-curve.svg), url(../images/pattern-bg.svg);
+    background-image: url("images/pattern-curve.svg"), url("images/pattern-bg.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0% 100%, 85% 12%;
